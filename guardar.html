@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Iconos materialize -->  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+
+    <title>Casa Firme</title>
+</head>
+<body class="grey lighten-2">
+
+
+
+<div class="container section">
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="img/img2.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/img4.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/img7.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/img8.jpg"></a>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+            });
+    </script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems,{
+                indicators: true,
+                numVisible: 3,
+
+            });
+            });
+
+    </script>
+
+</body>
+
+</html>
